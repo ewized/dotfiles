@@ -13,6 +13,20 @@ set mouse=a         " Mouse support!
 
 " Mapping
 " CIS 201 Description.
-abb cppDescription /*<return><tab>Filename: <return><tab>Problem: <return><tab>Description: <return><tab>Author: Joshua Rodriguez<return><tab>Email: ewi    zed@gmail.com<return><tab>Date: <return>*/<return>
+abb cppDescription /*
+\<CR><tab>Filename: 
+\<CR><tab>Problem: 
+\<CR><tab>Description:
+\<CR><tab>Author: Joshua Rodriguez
+\<CR><tab>Email: ewized@gmail.com
+\<CR><tab>Date: 
+\<CR>*/
+
 " C++ Skeleton.
-abb cppSkeleton #include <iostream><return><return>using namespace std;<return><return>int main()<return>{<return><tab>return 0;<return>}
+abb cppSkeleton #include <iostream>
+\<CR>
+\<CR>using namespace std;
+\<CR>
+\<CR>int main() {
+\<CR><tab>return 0;
+\<CR>}
