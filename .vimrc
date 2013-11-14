@@ -14,6 +14,17 @@ set mouse=a         " Mouse support!
 " Mapping
 " CIS Skeleton
 map <F6> <F4><ESC><F5>
+
+" Better movemet
+" J K
+map j gj
+map k gk
+" Up Down
+map <UP> g<UP>
+map <DOWN> g<DOWN>
+imap <UP> <ESC>g<UP>a
+imap <DOWN> <ESC>g<DOWN>a
+
  
 " CIS Description.
 map <F4> i<CR><CR><ESC>kki/*
