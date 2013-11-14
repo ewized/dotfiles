@@ -25,7 +25,11 @@ map <DOWN> g<DOWN>
 imap <UP> <ESC>g<UP>a
 imap <DOWN> <ESC>g<DOWN>a
 
- 
+" Show lines over 80 and a line.
+highlight OverLength ctermbg=red ctermfg=white guibg=#592929
+match OverLength /\%81v.\+/
+set cc=81
+
 " CIS Description.
 map <F4> i<CR><CR><ESC>kki/*
 \<CR><TAB>Filename: <ESC> "=expand("%") <CR>PkJA
