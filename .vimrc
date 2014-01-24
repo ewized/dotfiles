@@ -10,6 +10,9 @@ set expandtab       " Use spaces not tabs.
 set smarttab        " Use spaces not tabs.
 set spell           " Spell checking.
 set mouse=a         " Mouse support!
+set nobackup        " No backup files
+set nowritebackup   " No backup files
+set noswapfile      " No swap files
 
 " Mapping
 " Tabs Tabs This is the only way to may sue that I can get this to work the way that I want to
