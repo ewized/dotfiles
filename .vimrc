@@ -12,8 +12,12 @@ set spell           " Spell checking.
 set mouse=a         " Mouse support!
 
 " Mapping
+" Tabs Tabs This is the only way to may sue that I can get this to work the way that I want to
+map <C-T> <ESC>:tabe<CR>
+
 " CIS Skeleton
 map <F6> <F4><ESC><F5>
+map <F7> <F4><ESC><F3>
 
 " Better movemet
 " J K
@@ -22,13 +26,14 @@ map k gk
 " Up Down
 map <UP> g<UP>
 map <DOWN> g<DOWN>
-imap <UP> <ESC>g<UP>a
-imap <DOWN> <ESC>g<DOWN>a
 
 " Show lines over 80 and a line.
-highlight OverLength ctermbg=red ctermfg=white guibg=#592929
-match OverLength /\%81v.\+/
-set cc=81
+set colorcolumn=81
+map <silent> <END> <ESC>:set cc=0<CR>
+map <silent> <HOME> <ESC>:set cc=81<CR>
+
+" Java Comment
+abb ncom <TAB>/**<ESC>o<TAB> *<ESC>o<TAB> */
 
 " CIS Description.
 map <F4> i<CR><CR><ESC>kki/*
@@ -47,4 +52,10 @@ map <F5> o#include <iostream>
 \<CR>
 \<CR>int main() {
 \<CR><TAB>return 0;
+\<CR>}
+
+" Java Skelton
+map <F3> opublic class <ESC> "=expand("%") <CR>PkJA<ESC>d4hdlA {
+\<CR><TAB>public static void main(String[] args) {
+\<CR><TAB>}
 \<CR>}
